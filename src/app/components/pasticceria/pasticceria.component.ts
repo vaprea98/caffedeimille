@@ -47,8 +47,8 @@ interface MenuItem {
 })
 export class PasticceriaComponent {
   menuItems: MenuItem[] = [
-    { name: 'Cornetto', price: '€1.00', image: 'assets/menu-photos/cornetto.png' },
-    { name: 'Cornetto farcito', price: '€1.00', image: 'assets/menu-photos/cornetto_farcito.png', description: 'Nutella, Cioccolato Bianco, Crema, Bueno, Pistacchio' },
+    { name: 'Cornetto', price: '€1.20', image: 'assets/menu-photos/cornetto.png' },
+    { name: 'Cornetto farcito', price: '€1.50', image: 'assets/menu-photos/cornetto_farcito.png', description: 'Nutella, Cioccolato Bianco, Crema, Bueno, Pistacchio' },
     { name: 'Tiramisù', price: '€3.50', image: 'assets/menu-photos/tiramisu.png' },
     { name: 'Cheesecake', price: '€4.00', image: 'assets/menu-photos/cheesecake.png', description: 'Nutella, Cioccolato Bianco, Kinder, Frutti di bosco' },
   ];
