@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <header class="bg-gradient-to-r from-amber-900 via-amber-800 to-yellow-700 text-white shadow-2xl">
+    <header class="bg-gradient-to-r from-amber-900 via-amber-800 to-amber-900 text-white shadow-2xl">
       <div class="max-w-4xl mx-auto px-6 py-8">
         <div class="flex items-center justify-between">
           <button 
@@ -33,7 +33,7 @@ import { Router } from '@angular/router';
         </div>
         
         <div class="text-center mt-4">
-          <p class="text-xl md:text-2xl text-amber-100 font-light">{{ subtitle }}</p>
+          <p class="text-xl md:text-2xl text-white font-light">{{ subtitle }}</p>
           <div class="mt-6 h-1 w-24 bg-gradient-to-r from-transparent via-amber-200 to-transparent mx-auto opacity-60"></div>
         </div>
       </div>

@@ -28,7 +28,7 @@ interface MenuItem {
           </div>
           <div>
             <h2 class="text-3xl font-bold text-amber-900">Caffetteria</h2>
-            <p class="text-amber-700 text-lg mt-1">Caffè artigianali e bevande calde preparate con miscele selezionate dai migliori produttori</p>
+            <p class="text-amber-900 text-lg mt-1">Caffè artigianali e bevande calde preparate con miscele selezionate dai migliori produttori</p>
           </div>
         </div>
         

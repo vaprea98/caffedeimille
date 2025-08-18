@@ -102,14 +102,14 @@ export class DrinkeriaComponent {
     
     // Soft Drink
     { name: 'Coca Cola', price: '€2.50', image: 'assets/menu-photos/cocacola.png', category: 'Soft Drink' },
+    { name: 'Coca Cola Zero', price: '€2.50', image: 'assets/menu-photos/cocacola_zero.png', category: 'Soft Drink' },
     { name: 'Estathè Limone', price: '€3.00', image: 'assets/menu-photos/the_limone.png', category: 'Soft Drink' },
     { name: 'Estathè Pesca', price: '€3.00', image: 'assets/menu-photos/the_pesca.png', category: 'Soft Drink' },
-    { name: 'Coca Cola Zero', price: '€2.50', image: 'assets/menu-photos/cocacola_zero.png', category: 'Soft Drink' },
     { name: 'Fanta', price: '€2.50', image: 'assets/menu-photos/fanta.png', category: 'Soft Drink' },
     { name: 'Sprite', price: '€2.50', image: 'assets/menu-photos/sprite.png', category: 'Soft Drink' },
     { name: 'Red Bull', price: '€2.50', image: 'assets/menu-photos/red_bull.png', category: 'Soft Drink' },
-    { name: 'Acqua Naturale/Frizzante', price: '€1.00', image: 'assets/menu-photos/acqua.png', category: 'Soft Drink' },
-    { name: 'Succo di Frutta', price: '€1.00', image: 'assets/menu-photos/succo_frutta.png', category: 'Soft Drink', description: 'Pesca, Mango, Ace, Pera' },
+    { name: 'Acqua', price: '€1.00', image: 'assets/menu-photos/acqua.png', category: 'Soft Drink', description: 'Naturale/Frizzante' },
+    { name: 'Succo di Frutta', price: '€2.50', image: 'assets/menu-photos/succo_frutta.png', category: 'Soft Drink', description: 'Pesca, Mango, Ace, Pera' },
     ];
   
   // Metodo per filtrare i drink per categoria
