@@ -1,0 +1,36 @@
+{
+  "caffetteria": [
+    { "name": "Espresso", "price": "€1.00", "image": "assets/menu-photos/espresso.png" },
+    { "name": "Cappuccino", "price": "€2.00", "image": "assets/menu-photos/cappuccino.png" },
+    { "name": "Macchiato", "price": "€1.00", "image": "assets/menu-photos/macchiatto.png" },
+    { "name": "Caffè Corretto", "price": "€2.50", "image": "assets/menu-photos/caffe_corretto.png" },
+    { "name": "Crema Caffè", "price": "€2.00", "image": "assets/menu-photos/crema_caffe.png" },
+    { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.png" }
+  ],
+  "pasticceria": [
+    { "name": "Cornetto", "price": "€1.20", "image": "assets/menu-photos/cornetto.png" },
+    { "name": "Cornetto farcito", "price": "€1.50", "image": "assets/menu-photos/cornetto_farcito.png", "description": "Nutella, Cioccolato Bianco, Crema, Bueno, Pistacchio" },
+    { "name": "Tiramisù", "price": "€3.50", "image": "assets/menu-photos/tiramisu.png" },
+    { "name": "Cheesecake", "price": "€4.00", "image": "assets/menu-photos/cheesecake.png", "description": "Nutella, Cioccolato Bianco, Kinder, Frutti di bosco" }
+  ],
+  "drinkeria": {
+    "drink": [
+      { "name": "Aperol Spritz", "price": "€5.00", "image": "assets/menu-photos/spritz_aperol.png" },
+      { "name": "Negroni", "price": "€6.00", "image": "assets/menu-photos/negroni.png" },
+      { "name": "Mojito", "price": "€5.50", "image": "assets/menu-photos/mojito.png" },
+      { "name": "Gin Tonic", "price": "€5.00", "image": "assets/menu-photos/gin_tonic.png" },
+      { "name": "Gin Lemon", "price": "€5.00", "image": "assets/menu-photos/gin_lemon.png" }
+    ],
+    "softDrink": [
+      { "name": "Coca Cola", "price": "€2.50", "image": "assets/menu-photos/cocacola.png" },
+      { "name": "Coca Cola Zero", "price": "€2.50", "image": "assets/menu-photos/cocacola_zero.png" },
+      { "name": "Estathè Limone", "price": "€3.00", "image": "assets/menu-photos/the_limone.png" },
+      { "name": "Estathè Pesca", "price": "€3.00", "image": "assets/menu-photos/the_pesca.png" },
+      { "name": "Fanta", "price": "€2.50", "image": "assets/menu-photos/fanta.png" },
+      { "name": "Sprite", "price": "€2.50", "image": "assets/menu-photos/sprite.png" },
+      { "name": "Red Bull", "price": "€2.50", "image": "assets/menu-photos/red_bull.png" },
+      { "name": "Acqua", "price": "€1.00", "image": "assets/menu-photos/acqua.png", "description": "Naturale/Frizzante" },
+      { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.png", "description": "Pesca, Mango, Ace, Pera" }
+    ]
+  }
+}

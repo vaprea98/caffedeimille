@@ -1,0 +1,64 @@
+.home-description {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.category-title {
+  color: #212121;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  background: linear-gradient(to bottom right, #fff8e1, #fff3cd);
+  border: 1px solid rgba(222, 184, 135, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
+}
+
+.bg-coffee {
+  background-color: #8b5a2b;
+}
+
+.bg-drink {
+  background-color: #8b5a2b;
+}
+
+.bg-pastry {
+  background-color: #8b5a2b;
+}
+
+.card-title {
+  color: #160d05;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c4d2c;
+  font-size: 1.1rem;
+}
