@@ -1,0 +1,49 @@
+<app-header [showBackButton]="true" subtitle="Drinkeria"></app-header>
+
+<main class="container py-5">
+  <div class="card bg-light mb-4">
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <div class="category-icon bg-drink me-3">
+          <lucide-icon name="martini" [size]="34"></lucide-icon>
+        </div>
+        <div>
+          <h2 class="section-title">Drinkeria</h2>
+          <p class="section-description">Cocktail, aperitivi e bevande</p>
+        </div>
+      </div>
+      
+      <!-- Sezione Drink -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center mb-3">
+          <div class="category-icon bg-drink-alcolici me-3">
+            <lucide-icon name="martini" [size]="34"></lucide-icon>
+          </div>
+          <h3 class="subsection-title">Alcolici</h3>
+        </div>
+        
+        <ul class="list-unstyled">
+          <li *ngFor="let item of drinkItems">
+            <app-product-card [product]="item"></app-product-card>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Sezione Soft Drink -->
+      <div>
+        <div class="d-flex align-items-center mb-3">
+          <div class="category-icon bg-drink-soft me-3">
+            <lucide-icon name="cup-soda" [size]="38"></lucide-icon>
+          </div>
+          <h3 class="subsection-title">Soft Drink</h3>
+        </div>
+        
+        <ul class="list-unstyled">
+          <li *ngFor="let item of softDrinkItems">
+            <app-product-card [product]="item"></app-product-card>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>

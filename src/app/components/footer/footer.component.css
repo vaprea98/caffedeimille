@@ -1,0 +1,23 @@
+footer {
+  background: linear-gradient(to right, rgb(194, 87, 11), #8e5622, #92561e);
+  color: white;
+}
+
+.hover-bg-opacity-20:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .justify-content-md-start {
+    justify-content: center;
+  }
+  
+  .text-md-start {
+    text-align: center;
+  }
+}

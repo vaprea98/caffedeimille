@@ -1,0 +1,23 @@
+<app-header [showBackButton]="true" subtitle="Caffetteria"></app-header>
+
+<main class="container py-5">
+  <div class="card bg-light mb-4">
+    <div class="card-body">
+      <div class="d-flex align-items-center mb-4">
+        <div class="category-icon bg-coffee me-3">
+          <i class="bi bi-cup-hot-fill" style="font-size: 2rem;"></i>
+        </div>
+        <div>
+          <h2 class="section-title">Caffetteria</h2>
+          <p class="section-description">Caffè artigianali e bevande calde preparate con miscele selezionate dai migliori produttori</p>
+        </div>
+      </div>
+      
+      <ul class="list-unstyled">
+        <li *ngFor="let item of menuItems">
+          <app-product-card [product]="item"></app-product-card>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>

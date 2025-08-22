@@ -1,0 +1,68 @@
+<app-header [showBackButton]="false" subtitle="Benvenuti al nostro Menù"></app-header>
+
+<main class="container py-5">
+  <div class="text-center mb-5">
+    <p class="lead text-black home-description">
+      Scopri la nostra selezione di caffè artigianali, cocktail creativi e dolci della tradizione. 
+      Ogni prodotto è preparato con ingredienti di qualità per offrirti un'esperienza unica.
+    </p>
+  </div>
+
+  <div class="mb-5">
+    <h2 class="text-center mb-4 fw-bold category-title">Scegli una Categoria</h2>
+    
+    <!-- Caffetteria -->
+    <div class="card mb-4 category-card" (click)="navigateTo('/caffetteria')">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <div class="category-icon bg-coffee me-3">
+            <i class="bi bi-cup-hot-fill" style="font-size: 2rem;"></i>
+          </div>
+          <div>
+            <h3 class="card-title mb-1">Caffetteria</h3>
+            <p class="card-text">Caffè artigianali e bevande calde</p>
+          </div>
+          <div class="ms-auto">
+            <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinkeria -->
+    <div class="card mb-4 category-card" (click)="navigateTo('/drinkeria')">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <div class="category-icon bg-drink me-3">
+            <lucide-icon name="martini" color="#ffffff" [strokeWidth]="2.0" [size]="34"></lucide-icon>
+          </div>
+          <div>
+            <h3 class="card-title mb-1">Drinkeria</h3>
+            <p class="card-text">Cocktail, aperitivi e bevande</p>
+          </div>
+          <div class="ms-auto">
+            <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pasticceria -->
+    <div class="card mb-4 category-card" (click)="navigateTo('/pasticceria')">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <div class="category-icon bg-pastry me-3">
+            <i class="bi bi-cake2-fill" style="font-size: 2rem;"></i>
+          </div>
+          <div>
+            <h3 class="card-title mb-1">Pasticceria</h3>
+            <p class="card-text">Dolci della tradizione e torte</p>
+          </div>
+          <div class="ms-auto">
+            <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

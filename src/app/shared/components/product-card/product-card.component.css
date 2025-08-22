@@ -1,0 +1,44 @@
+.menu-item {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(222, 184, 135, 0.2);
+}
+
+.menu-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.menu-item-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.menu-item-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 0.25rem;
+}
+
+.menu-item-category {
+  font-size: 0.85rem;
+  color: #8B4513;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.menu-item-price {
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.1rem;
+}
