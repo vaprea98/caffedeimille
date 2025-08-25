@@ -14,5 +14,5 @@ import { FooterComponent } from './components/footer/footer.component';
   `
 })
 export class AppComponent {
-  title = 'pause-bar-menu';
+  title = 'caffe-dei-mille-menu';
 }

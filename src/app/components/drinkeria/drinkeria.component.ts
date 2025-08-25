@@ -19,6 +19,8 @@ export class DrinkeriaComponent implements OnInit {
   menuItems: ProductItem[] = [];
   drinkItems: ProductItem[] = [];
   softDrinkItems: ProductItem[] = [];
+  wineItems: ProductItem[] = [];
+
   currentCategory: string = 'menu'; // 'menu', 'drink', 'softDrink'
 
   constructor(private productService: ProductService, private router: Router) {}
@@ -36,6 +38,11 @@ export class DrinkeriaComponent implements OnInit {
     // Carica i soft drink
     this.productService.getSoftDrinkProducts().subscribe(products => {
       this.softDrinkItems = products;
+    });
+
+    // Carica i vini
+    this.productService.getWineProducts().subscribe(products => {
+      this.wineItems = products;
     });
 
     // Carica tutti i prodotti di drinkeria

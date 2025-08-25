@@ -38,6 +38,11 @@
       { "name": "Acqua e orzata", "price": "€2.00", "image": "assets/menu-photos/acqua_orzata.png" },
       { "name": "Acqua", "price": "€1.00", "image": "assets/menu-photos/acqua.png", "description": "Naturale/Frizzante" },
       { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.png", "description": "Pesca, Mango, Ace, Pera" }
+    ],
+    "wine": [
+      { "name": "Heineken", "price": "€3.50", "image": "assets/menu-photos/heineken.png" },
+      { "name": "Ceres", "price": "€5.00", "image": "assets/menu-photos/ceres.png" },
+      { "name": "Tennet's", "price": "€4.50", "image": "assets/menu-photos/tennets.png" }
     ]
   }
 }

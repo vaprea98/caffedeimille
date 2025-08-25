@@ -43,6 +43,11 @@ export class ProductService {
       map(data => data.drinkeria.softDrink)
     );
   }
+  getWineProducts():Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.drinkeria.wine)
+    );
+  }
 
   // Ottiene tutti i prodotti di drinkeria (drink + soft drink)
   getAllDrinkeriaProducts(): Observable<ProductItem[]> {
