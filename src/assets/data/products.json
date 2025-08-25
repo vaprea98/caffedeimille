@@ -1,9 +1,13 @@
 {
   "caffetteria": [
     { "name": "Espresso", "price": "€1.00", "image": "assets/menu-photos/espresso.png" },
+    { "name": "Ginseng", "price": "€1.50", "image": "assets/menu-photos/ginseng.png" },
+    { "name": "Caffè orzo", "price": "€1.50", "image": "assets/menu-photos/caffe_orzo.png" },
     { "name": "Cappuccino", "price": "€2.00", "image": "assets/menu-photos/cappuccino.png" },
+    { "name": "Cappuccino Freddo", "price": "€2.50", "image": "assets/menu-photos/cappuccino_freddo.png" },
     { "name": "Macchiato", "price": "€1.00", "image": "assets/menu-photos/macchiatto.png" },
-    { "name": "Caffè Corretto", "price": "€2.50", "image": "assets/menu-photos/caffe_corretto.png" },
+    { "name": "Latte bianco", "price": "€2.00", "image": "assets/menu-photos/latte_bianco.png" },
+    { "name": "Caffè Corretto", "price": "€2.00", "image": "assets/menu-photos/caffe_corretto.png" },
     { "name": "Crema Caffè", "price": "€2.00", "image": "assets/menu-photos/crema_caffe.png" },
     { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.png" }
   ],
@@ -26,9 +30,12 @@
       { "name": "Coca Cola Zero", "price": "€2.50", "image": "assets/menu-photos/cocacola_zero.png" },
       { "name": "Estathè Limone", "price": "€3.00", "image": "assets/menu-photos/the_limone.png" },
       { "name": "Estathè Pesca", "price": "€3.00", "image": "assets/menu-photos/the_pesca.png" },
+      { "name": "Monster", "price": "€3.00", "image": "assets/menu-photos/monster.png", "description": "Vari gusti" },
       { "name": "Fanta", "price": "€2.50", "image": "assets/menu-photos/fanta.png" },
+      { "name": "Lemon Soda", "price": "€2.50", "image": "assets/menu-photos/lemon_soda.png" },
       { "name": "Sprite", "price": "€2.50", "image": "assets/menu-photos/sprite.png" },
       { "name": "Red Bull", "price": "€2.50", "image": "assets/menu-photos/red_bull.png" },
+      { "name": "Acqua e orzata", "price": "€2.00", "image": "assets/menu-photos/acqua_orzata.png" },
       { "name": "Acqua", "price": "€1.00", "image": "assets/menu-photos/acqua.png", "description": "Naturale/Frizzante" },
       { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.png", "description": "Pesca, Mango, Ace, Pera" }
     ]
