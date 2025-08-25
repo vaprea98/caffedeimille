@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pause-bar-menu": {
+    "caffe-dei-mille-menu": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pause-bar-menu",
+            "outputPath": "dist/caffe-dei-mille-menu",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pause-bar-menu:build:production"
+              "buildTarget": "caffe-dei-mille-menu:build:production"
             },
             "development": {
-              "buildTarget": "pause-bar-menu:build:development"
+              "buildTarget": "caffe-dei-mille-menu:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "pause-bar-menu:build"
+            "buildTarget": "caffe-dei-mille-menu:build"
           }
         },
         "test": {
