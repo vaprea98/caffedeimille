@@ -5,6 +5,7 @@ import { ProductCardComponent } from '../../shared/components/product-card/produ
 import { ProductItem } from '../../shared/models/product.model';
 import { ProductService } from '../../shared/services/product.service';
 import { LucideAngularModule } from 'lucide-angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-drinkeria',
@@ -18,8 +19,9 @@ export class DrinkeriaComponent implements OnInit {
   menuItems: ProductItem[] = [];
   drinkItems: ProductItem[] = [];
   softDrinkItems: ProductItem[] = [];
+  currentCategory: string = 'menu'; // 'menu', 'drink', 'softDrink'
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -40,6 +42,10 @@ export class DrinkeriaComponent implements OnInit {
     this.productService.getAllDrinkeriaProducts().subscribe(products => {
       this.menuItems = products;
     });
+  }
+  
+  showCategory(category: string): void {
+    this.currentCategory = category;
   }
 
 }
