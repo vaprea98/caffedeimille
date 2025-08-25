@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { ProductCardComponent } from '../../shared/components/product-card/product-card.component';
@@ -22,7 +22,10 @@ export class DrinkeriaComponent implements OnInit {
   wineItems: ProductItem[] = [];
 
   currentCategory: string = 'menu'; // 'menu', 'drink', 'softDrink'
+  @ViewChild('sectionTop') sectionTop?: ElementRef<HTMLElement>;
+  @ViewChild('pageTop') pageTop?: ElementRef<HTMLElement>;
 
+  
   constructor(private productService: ProductService, private router: Router) {}
 
   ngOnInit(): void {
@@ -53,6 +56,24 @@ export class DrinkeriaComponent implements OnInit {
   
   showCategory(category: string): void {
     this.currentCategory = category;
+
+    setTimeout(() => {
+      this.sectionTop?.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  }
+
+  goBackToMenu() {
+    this.currentCategory = 'menu';
+
+    setTimeout(() => {
+      this.pageTop?.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
   }
 
 }

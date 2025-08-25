@@ -1,6 +1,7 @@
 <app-header [showBackButton]="true" subtitle="Drinkeria"></app-header>
 
 <main class="container py-5">
+  <div #pageTop></div>
   <div class="card bg-light mb-4">
     <div class="card-body">
       <div class="d-flex align-items-center mb-4">
@@ -85,12 +86,12 @@
         
         <!-- Vista Drink Alcolici -->
         <div *ngSwitchCase="'drink'">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
             <div class="category-icon bg-drink-alcolici me-3">
               <lucide-icon name="martini" [size]="34"></lucide-icon>
             </div>
             <h3 class="subsection-title">Alcolici</h3>
-            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="currentCategory = 'menu'">
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
               <i class="bi bi-arrow-left"></i> Indietro
             </button>
           </div>
@@ -100,16 +101,21 @@
               <app-product-card [product]="item"></app-product-card>
             </li>
           </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
         </div>
         
         <!-- Vista Soft Drink -->
         <div *ngSwitchCase="'softDrink'">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
             <div class="category-icon bg-drink-soft me-3">
               <lucide-icon name="cup-soda" [size]="38"></lucide-icon>
             </div>
             <h3 class="subsection-title">Soft Drink</h3>
-            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="currentCategory = 'menu'">
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
               <i class="bi bi-arrow-left"></i> Indietro
             </button>
           </div>
@@ -119,16 +125,21 @@
               <app-product-card [product]="item"></app-product-card>
             </li>
           </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
         </div>
 
         <!-- Vista Vini e Birre -->
         <div *ngSwitchCase="'wine'">
-          <div class="d-flex align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
             <div class="category-icon bg-drink-vinos me-3">
               <lucide-icon name="wine" [size]="38"></lucide-icon>
             </div>
             <h3 class="subsection-title">Vini e Birre</h3>
-            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="currentCategory = 'menu'">
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
               <i class="bi bi-arrow-left"></i> Indietro
             </button>
           </div>
@@ -138,6 +149,11 @@
               <app-product-card [product]="item"></app-product-card>
             </li>
           </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
         </div>
       </div>
     </div>
