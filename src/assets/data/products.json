@@ -2,13 +2,13 @@
   "caffetteria": [
     { "name": "Espresso", "price": "€1.20", "image": "assets/menu-photos/espresso.jpg" },
     { "name": "Decaffeinato", "price": "€1.50", "image": "assets/menu-photos/espresso.jpg" },
-    { "name": "Macchiato", "price": "€1.20", "image": "assets/menu-photos/macchiatto.jpg" }
+    { "name": "Macchiato", "price": "€1.20", "image": "assets/menu-photos/macchiatto.jpg" },
     { "name": "Ginseng", "price": "€1.50", "image": "assets/menu-photos/ginseng.jpg" },
     { "name": "Caffè orzo", "price": "€1.50", "image": "assets/menu-photos/caffe_orzo.jpg" },
     { "name": "Cappuccino", "price": "€2.00", "image": "assets/menu-photos/cappuccino.jpg" },
     { "name": "Cappuccino Freddo", "price": "€2.50", "image": "assets/menu-photos/cappuccino_freddo.jpg" },
     { "name": "Latte bianco", "price": "€2.00", "image": "assets/menu-photos/latte_bianco.jpg" },
-    { "name": "Caffè Corretto", "price": "€2.00", "image": "assets/menu-photos/caffe_corretto.jpg", "description" "Liquore, Nutella, Nocciola" },
+    { "name": "Caffè Corretto", "price": "€2.00", "image": "assets/menu-photos/caffe_corretto.jpg", "description": "Liquore, Nutella, Nocciola" },
     { "name": "Crema Caffè", "price": "€2.50", "image": "assets/menu-photos/crema_caffe.jpg" },
     { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.jpg" },
     { "name": "Tea Twinings", "price": "€2.00", "image": "assets/menu-photos/tea.jpg" },
