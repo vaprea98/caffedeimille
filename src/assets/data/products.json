@@ -18,7 +18,7 @@
     { "name": "Cornetto", "price": "€1.20", "image": "assets/menu-photos/cornetto.jpg" },
     { "name": "Cornetto farcito", "price": "€1.50", "image": "assets/menu-photos/cornetto_farcito.jpg", "description": "Nutella, Cioccolato Bianco, Albicocca, Crema" },
     { "name": "Cornetto al pistacchio", "price": "€2.00", "image": "assets/menu-photos/cornetto_pistacchio.jpg"},
-    { "name": "Cornetto crema amarena", "price": "€2.00", "image": "assets/menu-photos/cornetto_crema_amarena.jpg"},
+    { "name": "Cornetto crema amarena", "price": "€2.00", "image": "assets/menu-photos/cornetto_creama_amarena.jpg"},
     { "name": "Cornetto ai frutti di bosco", "price": "€1.50", "image": "assets/menu-photos/cornetto_frutti.jpg"},
     { "name": "Cornetto 5 cereali", "price": "€2.00", "image": "assets/menu-photos/cornetto_5cereali.jpg"},
     { "name": "Cornetto Mini", "price": "€1.00", "image": "assets/menu-photos/cornetto.jpg"},
@@ -27,9 +27,7 @@
     { "name": "Conchiglia", "price": "€2.00", "image": "assets/menu-photos/conchiglia.jpg"},
     { "name": "Pasticciotto", "price": "€2.00", "image": "assets/menu-photos/pasticciotto.jpg"},
     { "name": "Bombolone", "price": "€1.50", "image": "assets/menu-photos/bombolone.jpg"},
-    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"},
-    { "name": "Tiramisù", "price": "€3.50", "image": "assets/menu-photos/tiramisu.jpg" },
-    { "name": "Cheesecake", "price": "€4.00", "image": "assets/menu-photos/cheesecake.jpg", "description": "Nutella, Cioccolato Bianco, Kinder, Frutti di bosco" }
+    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"}
   ],
   "drinkeria": {
     "drink": [
