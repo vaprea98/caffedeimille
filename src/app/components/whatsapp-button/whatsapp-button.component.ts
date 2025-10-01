@@ -11,7 +11,7 @@ export class WhatsappButtonComponent {
   phoneNumber = '390813599118';
   
   // Messaggio predefinito (opzionale)
-  defaultMessage = 'Ciao! Vorrei avere informazioni sul Caffè dei Mille.';
+  defaultMessage = 'Ciao! Vorrei effettuare una prenotazione/consegna';
   
   getWhatsAppLink(): string {
     // Codifica il messaggio per l'URL
