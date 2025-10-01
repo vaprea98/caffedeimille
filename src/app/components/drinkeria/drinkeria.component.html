@@ -17,6 +17,7 @@
       <!-- Pulsanti di navigazione sottocategorie -->
       <div class="mb-4">
         <div class="row g-3">
+
           <!-- Pulsante Alcolici -->
           <div class="col-md-6">
             <div class="card category-card" (click)="showCategory('drink')">
@@ -47,7 +48,7 @@
                   </div>
                   <div>
                     <h3 class="card-title mb-1">Soft Drink</h3>
-                    <p class="card-text">Bevande analcoliche</p>
+                    <p class="card-text">Analcolici</p>
                   </div>
                   <div class="ms-auto">
                     <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
@@ -56,6 +57,28 @@
               </div>
             </div>
           </div>
+
+          <!-- Pulsante Birre -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('beer')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-drink-beers me-3">
+                    <lucide-icon name="beer" [size]="38"></lucide-icon>
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-1">Birre</h3>
+                    <p class="card-text">Le nostre Birre</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Vini -->
           <div class="col-md-6">
             <div class="card category-card" (click)="showCategory('wine')">
               <div class="card-body">
@@ -64,8 +87,69 @@
                     <lucide-icon name="wine" [size]="38"></lucide-icon>
                   </div>
                   <div>
-                    <h3 class="card-title mb-1">Vini e Birre</h3>
-                    <p class="card-text">Vini & Birre</p>
+                    <h3 class="card-title mb-1">Vini</h3>
+                     <p class="card-text">Carta dei vini</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Distillati -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('distillati')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-drink-distillati me-3">
+                    <app-shot-glass-icon [size]="38"></app-shot-glass-icon>
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-1">Distillati</h3>
+                     <p class="card-text">I nostri distillati</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Amari -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('amari')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-drink-amari me-3">
+                    <app-shot-glass-icon [size]="38"></app-shot-glass-icon>
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-1">Liquori & Amari</h3>
+                     <p class="card-text">I nostri Liquori e Amari</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Champagne -->
+          
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('champagne')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-drink-champagne me-3">
+                    <app-champagne-glass [size]="38"></app-champagne-glass>
+                  </div>
+                  <div>
+                    <h3 class="card-title mb-1">Spumanti & Champagne</h3>
+                     <p class="card-text">Bollicine</p>
                   </div>
                   <div class="ms-auto">
                     <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
@@ -76,6 +160,7 @@
           </div>
         </div>
       </div>
+ 
       
       <!-- Visualizzazione in base alla categoria selezionata -->
       <div [ngSwitch]="currentCategory">
@@ -132,13 +217,37 @@
           </div>
         </div>
 
-        <!-- Vista Vini e Birre -->
+         <!-- Vista Birre -->
+        <div *ngSwitchCase="'beer'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-drink-beers me-3">
+              <lucide-icon name="beer" [size]="34"></lucide-icon>
+            </div>
+            <h3 class="subsection-title">Birre</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of beerItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>
+
+        <!-- Vista Vini -->
         <div *ngSwitchCase="'wine'">
           <div class="d-flex align-items-center mb-3" #sectionTop>
             <div class="category-icon bg-drink-vinos me-3">
               <lucide-icon name="wine" [size]="38"></lucide-icon>
             </div>
-            <h3 class="subsection-title">Vini e Birre</h3>
+            <h3 class="subsection-title">Vini</h3>
             <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
               <i class="bi bi-arrow-left"></i> Indietro
             </button>
@@ -146,6 +255,78 @@
           
           <ul class="list-unstyled">
             <li *ngFor="let item of wineItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>
+
+        <!-- Vista Distillati -->
+        <div *ngSwitchCase="'distillati'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-drink-distillati me-3">
+              <app-shot-glass-icon [size]="38"></app-shot-glass-icon>
+            </div>
+            <h3 class="subsection-title">Distillati</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of distillatiItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>
+
+        <!-- Vista Amari -->
+        <div *ngSwitchCase="'amari'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-drink-amari me-3">
+              <app-shot-glass-icon [size]="38"></app-shot-glass-icon>
+            </div>
+            <h3 class="subsection-title">Liquori & Amari</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of amariItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>
+
+        <!-- Vista Champagne -->
+        <div *ngSwitchCase="'champagne'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-drink-champagne me-3">
+              <app-champagne-glass [size]="38"></app-champagne-glass>
+            </div>
+            <h3 class="subsection-title">Champagne</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of champagneItems">
               <app-product-card [product]="item"></app-product-card>
             </li>
           </ul>

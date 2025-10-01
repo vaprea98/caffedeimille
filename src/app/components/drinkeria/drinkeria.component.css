@@ -44,6 +44,22 @@
   background-color: #a50000;
 }
 
+.bg-drink-beers {
+  background-color: #f28e1c;
+}
+
+.bg-drink-distillati {
+  background-color: #d0993b;
+}
+
+.bg-drink-champagne {
+  background-color: #fac774;
+}
+
+.bg-drink-amari {
+  background-color: #490a00ee;
+}
+
 .menu-item {
   background-color: #fff;
   border-radius: 0.75rem;
