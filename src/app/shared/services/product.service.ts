@@ -43,9 +43,37 @@ export class ProductService {
       map(data => data.drinkeria.softDrink)
     );
   }
+// Ottini le birre
+getBeerProducts():Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.drinkeria.beer)
+    );
+  }  
+// Ottini i vini
   getWineProducts():Observable<ProductItem[]> {
     return this.http.get<any>(this.productsUrl).pipe(
       map(data => data.drinkeria.wine)
+    );
+  }
+
+  // Ottieni distillati
+  getDistillatiProducts():Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.drinkeria.distillati)
+    );
+  }
+
+  // Ottieni Champagne
+  getAmariProducts():Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.drinkeria.amari)
+    );
+  }
+
+  // Ottieni Champagne
+  getChampagneProducts():Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.drinkeria.champagne)
     );
   }
 

@@ -1,33 +1,34 @@
 {
   "caffetteria": [
     { "name": "Espresso", "price": "€1.20", "image": "assets/menu-photos/espresso.jpg" },
-    { "name": "Decaffeinato", "price": "€1.50", "image": "assets/menu-photos/espresso.jpg" },
     { "name": "Macchiato", "price": "€1.20", "image": "assets/menu-photos/macchiatto.jpg" },
-    { "name": "Ginseng", "price": "€1.50", "image": "assets/menu-photos/ginseng.jpg" },
+    { "name": "Caffè Dei Mille", "price": "€1.50", "image": "assets/menu-photos/logo.png", "description": "La nostra Specialità" },
+    { "name": "Caffè Corretto", "price": "€2.00", "image": "assets/menu-photos/caffe_corretto.jpg", "description": "Liquore, Nutella, Nocciola" },
     { "name": "Caffè orzo", "price": "€1.50", "image": "assets/menu-photos/caffe_orzo.jpg" },
+    { "name": "Decaffeinato", "price": "€1.50", "image": "assets/menu-photos/espresso.jpg" },    
+    { "name": "Ginseng", "price": "€1.50", "image": "assets/menu-photos/ginseng.jpg" },
+    { "name": "Latte bianco", "price": "€2.00", "image": "assets/menu-photos/latte_bianco.jpg" },     
     { "name": "Cappuccino", "price": "€2.00", "image": "assets/menu-photos/cappuccino.jpg" },
     { "name": "Cappuccino Freddo", "price": "€2.50", "image": "assets/menu-photos/cappuccino_freddo.jpg" },
-    { "name": "Latte bianco", "price": "€2.00", "image": "assets/menu-photos/latte_bianco.jpg" },
-    { "name": "Caffè Corretto", "price": "€2.00", "image": "assets/menu-photos/caffe_corretto.jpg", "description": "Liquore, Nutella, Nocciola" },
     { "name": "Crema Caffè", "price": "€2.50", "image": "assets/menu-photos/crema_caffe.jpg" },
-    { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.jpg" },
     { "name": "Tea Twinings", "price": "€2.00", "image": "assets/menu-photos/tea.jpg" },
-    { "name": "Camomilla", "price": "€2.00", "image": "assets/menu-photos/camomilla.jpg" }
+    { "name": "Camomilla", "price": "€2.00", "image": "assets/menu-photos/camomilla.jpg" },
+    { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.jpg" }
   ],
   "pasticceria": [
-    { "name": "Cornetto", "price": "€1.20", "image": "assets/menu-photos/cornetto.jpg" },
+    { "name": "Cornetto Mini", "price": "€1.00", "image": "assets/menu-photos/cornetto.jpg"},
+    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"},
+    { "name": "Cornetto vuoto", "price": "€1.20", "image": "assets/menu-photos/cornetto.jpg" },
     { "name": "Cornetto farcito", "price": "€1.50", "image": "assets/menu-photos/cornetto_farcito.jpg", "description": "Nutella, Cioccolato Bianco, Albicocca, Crema" },
     { "name": "Cornetto al pistacchio", "price": "€2.00", "image": "assets/menu-photos/cornetto_pistacchio.jpg"},
     { "name": "Cornetto crema amarena", "price": "€2.00", "image": "assets/menu-photos/cornetto_creama_amarena.jpg"},
     { "name": "Cornetto ai frutti di bosco", "price": "€1.50", "image": "assets/menu-photos/cornetto_frutti.jpg"},
     { "name": "Cornetto 5 cereali", "price": "€2.00", "image": "assets/menu-photos/cornetto_5cereali.jpg"},
-    { "name": "Cornetto Mini", "price": "€1.00", "image": "assets/menu-photos/cornetto.jpg"},
     { "name": "Sfogliatella", "price": "€1.50", "image": "assets/menu-photos/sfogliatella.jpg"},
     { "name": "Monachina", "price": "€2.00", "image": "assets/menu-photos/monachina.jpg"},
     { "name": "Conchiglia", "price": "€2.00", "image": "assets/menu-photos/conchiglia.jpg"},
     { "name": "Pasticciotto", "price": "€2.00", "image": "assets/menu-photos/pasticciotto.jpg"},
-    { "name": "Bombolone", "price": "€1.50", "image": "assets/menu-photos/bombolone.jpg"},
-    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"}
+    { "name": "Bombolone", "price": "€1.50", "image": "assets/menu-photos/bombolone.jpg"}
   ],
   "drinkeria": {
     "drink": [
@@ -40,33 +41,59 @@
       
     ],
     "softDrink": [
+      { "name": "Acqua", "price": "€1.00", "image": "assets/menu-photos/acqua.jpg", "description": "Naturale/Frizzante" }, 
       { "name": "Coca Cola", "price": "€2.50", "image": "assets/menu-photos/cocacola.jpg" },
       { "name": "Coca Cola Zero", "price": "€2.50", "image": "assets/menu-photos/cocacola_zero.jpg" },
+      { "name": "Cocktail San Pellegrino Rosso", "price": "€2.50", "image": "assets/menu-photos/sp_rosso.jpg" },
+      { "name": "Cocktail San Pellegrino Silver", "price": "€2.50", "image": "assets/menu-photos/sp_silver.jpg" },
+      { "name": "Crodino", "price": "€2.50", "image": "assets/menu-photos/crodino.jpg" },
+      { "name": "Fanta", "price": "€2.50", "image": "assets/menu-photos/fanta.jpg" },
+      { "name": "Bitter Dry", "price": "€2.50", "image": "assets/menu-photos/bitter_dry.jpg" },
+      { "name": "Bitter Rosso", "price": "€2.50", "image": "assets/menu-photos/bitter_rosso.jpg" },
+      { "name": "Schweppes Limone", "price": "€2.50", "image": "assets/menu-photos/schweppes_lime.jpg" },
+      { "name": "Schweppes Tonica", "price": "€2.50", "image": "assets/menu-photos/schweppes_tonica.jpg" },
+      { "name": "Sprite", "price": "€2.50", "image": "assets/menu-photos/sprite.jpg" },
+      { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.jpg", "description": "Pesca, Ananas, Ace, Pera" },
+      { "name": "Succo di Frutta Martillo", "price": "€3.00", "image": "assets/menu-photos/succo_frutta.jpg"},
       { "name": "Estathè Limone", "price": "€3.00", "image": "assets/menu-photos/the_limone.jpg" },
       { "name": "Estathè Pesca", "price": "€3.00", "image": "assets/menu-photos/the_pesca.jpg" },
       { "name": "Monster", "price": "€3.00", "image": "assets/menu-photos/monster.jpg", "description": "Vari gusti" },
-      { "name": "Fanta", "price": "€2.50", "image": "assets/menu-photos/fanta.jpg" },
-      { "name": "Sprite", "price": "€2.50", "image": "assets/menu-photos/sprite.jpg" },
-      { "name": "Red Bull", "price": "€3.00", "image": "assets/menu-photos/red_bull.jpg" },
-      { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.jpg", "description": "Pesca, Ananas, Ace, Pera" },
-      { "name": "Succo di Frutta Martillo", "price": "€3.00", "image": "assets/menu-photos/succo_frutta.jpg"},
-      { "name": "Bitter Dry", "price": "€2.50", "image": "assets/menu-photos/bitter_dry.jpg" },
-      { "name": "Bitter Rosso", "price": "€2.50", "image": "assets/menu-photos/bitter_rosso.jpg" },
-      { "name": "Crodino", "price": "€2.50", "image": "assets/menu-photos/crodino.jpg" },
-      { "name": "Schweppes Limone", "price": "€2.50", "image": "assets/menu-photos/schweppes_lime.jpg" },
-      { "name": "Schweppes Tonica", "price": "€2.50", "image": "assets/menu-photos/schweppes_tonica.jpg" },
-      { "name": "Cocktail San Pellegrino Rosso", "price": "€2.50", "image": "assets/menu-photos/sp_rosso.jpg" },
-      { "name": "Cocktail San Pellegrino Silver", "price": "€2.50", "image": "assets/menu-photos/sp_silver.jpg" },
-      { "name": "Acqua", "price": "€1.00", "image": "assets/menu-photos/acqua.jpg", "description": "Naturale/Frizzante" } 
-
+      { "name": "Red Bull", "price": "€3.00", "image": "assets/menu-photos/red_bull.jpg" }
     ],
     "wine": [
-      { "name": "Heineken", "price": "€3.50", "image": "assets/menu-photos/heineken.jpg" },
-      { "name": "Ceres", "price": "€5.00", "image": "assets/menu-photos/ceres.jpg" },
-      { "name": "Tennet's", "price": "€5.00", "image": "assets/menu-photos/tennets.jpg" },
-      { "name": "Peroni", "price": "€3.00", "image": "assets/menu-photos/peroni.jpg" },
       { "name": "Calice di vino", "price": "€4.00", "image": "assets/menu-photos/calice_vino.jpg", "description" :"Fiano, Aglianico, Greco di tufo, Falanghina, Taurasi"} ,
       { "name": "Bottiglia di vino", "price": "€15.00", "image": "assets/menu-photos/vino.jpg", "description" :"Fiano, Aglianico, Greco di tufo, Falanghina, Taurasi"}
+    ],
+    "beer": [
+      { "name": "Peroni", "price": "€3.00", "image": "assets/menu-photos/peroni.jpg" },
+      { "name": "Heineken", "price": "€3.50", "image": "assets/menu-photos/heineken.jpg" },
+      { "name": "Ceres", "price": "€5.00", "image": "assets/menu-photos/ceres.jpg" },
+      { "name": "Tennet's", "price": "€5.00", "image": "assets/menu-photos/tennets.jpg" }      
+    ],
+    "distillati": [
+      { "name": "Keglevich Vodka", "price": "€2.00", "image": "assets/menu-photos/vodka.jpg", "description": "Cicchetto. Gusti: Melone, Pesca, Fragola" },
+      { "name": "Glen Grant", "price": "€3.00", "image": "assets/menu-photos/glengrant.jpg", "description": "Cicchetto" },
+      { "name": "Skyy", "price": "€3.00", "image": "assets/menu-photos/skyy.png", "description": "Cicchetto" },
+      { "name": "Rum", "price": "€3.00", "image": "assets/menu-photos/rum.jpg", "description": "Cicchetto" },
+      { "name": "Grappa", "price": "€3.50", "image": "assets/menu-photos/grappa.jpg", "description": "Cicchetto" },
+      { "name": "Gin", "price": "€4.00", "image": "assets/menu-photos/gin.jpg", "description": "Cicchetto" },
+      { "name": "Whiskey", "price": "€5.00", "image": "assets/menu-photos/jack.jpg", "description": "Cicchetto. Jack Daniel's Old N. 7" }
+    ],
+    "champagne": [
+      { "name": "Calice Prosecco Extra Dry", "price": "€4.00", "image": "assets/menu-photos/calice_prosecco.jpg" },
+      { "name": "Berlucchi", "price": "€25.00", "image": "assets/menu-photos/berlucchi.jpg" },
+      { "name": "Ferrari Maximum Brut 75 Cl", "price": "€35.00", "image": "assets/menu-photos/ferrari.jpg" },
+      { "name": "Moet & Chandon", "price": "€70.00", "image": "assets/menu-photos/moet.jpg" },
+      { "name": "Veuve Clicquot", "price": "€75.00", "image": "assets/menu-photos/clicquot.jpg" }
+    ],
+    "amari": [
+      { "name": "Disaronno", "price": "€1.50", "image": "assets/menu-photos/disaronno.jpg", "description": "Cicchetto" },
+      { "name": "Baileys", "price": "€2.00", "image": "assets/menu-photos/baileys.jpg", "description": "Cicchetto" },
+      { "name": "Amaro Del Capo", "price": "€2.00", "image": "assets/menu-photos/amarodelcapo.jpg", "description": "Cicchetto" },
+      { "name": "Amaro Montenegro", "price": "€20.00", "image": "assets/menu-photos/montenegro.jpg", "description": "Cicchetto" },
+      { "name": "Jägermeister", "price": "€2.00", "image": "assets/menu-photos/jager.jpg", "description": "Cicchetto" },
+      { "name": "Jefferson", "price": "€2.50", "image": "assets/menu-photos/jefferson.jpg", "description": "Cicchetto" }
+
     ]
   }
 }

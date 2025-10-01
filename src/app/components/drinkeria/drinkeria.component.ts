@@ -6,11 +6,12 @@ import { ProductItem } from '../../shared/models/product.model';
 import { ProductService } from '../../shared/services/product.service';
 import { LucideAngularModule } from 'lucide-angular';
 import { Router } from '@angular/router';
+import { IconsModule } from 'src/app/icons/icon.module';
 
 @Component({
   selector: 'app-drinkeria',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, ProductCardComponent, LucideAngularModule],
+  imports: [CommonModule, HeaderComponent, ProductCardComponent, LucideAngularModule, IconsModule],
 
   templateUrl: './drinkeria.component.html',
   styleUrls: ['./drinkeria.component.css']
@@ -20,6 +21,10 @@ export class DrinkeriaComponent implements OnInit {
   drinkItems: ProductItem[] = [];
   softDrinkItems: ProductItem[] = [];
   wineItems: ProductItem[] = [];
+  beerItems: ProductItem[] = [];
+  distillatiItems: ProductItem[] = [];
+  champagneItems: ProductItem[] = [];
+  amariItems: ProductItem[] = [];
 
   currentCategory: string = 'menu'; // 'menu', 'drink', 'softDrink'
   @ViewChild('sectionTop') sectionTop?: ElementRef<HTMLElement>;
@@ -43,10 +48,30 @@ export class DrinkeriaComponent implements OnInit {
       this.softDrinkItems = products;
     });
 
+    // Carica birre
+    this.productService.getBeerProducts().subscribe(products => {
+      this.beerItems = products;
+    })
+
     // Carica i vini
     this.productService.getWineProducts().subscribe(products => {
       this.wineItems = products;
     });
+
+    // Carica Distillati
+    this.productService.getDistillatiProducts().subscribe(products => {
+      this.distillatiItems = products;
+    })
+
+    // Carica Amari
+    this.productService.getAmariProducts().subscribe(products => {
+      this.amariItems = products;
+    })
+
+    // Carica Champagne
+    this.productService.getChampagneProducts().subscribe(products => {
+      this.champagneItems = products;
+    })
 
     // Carica tutti i prodotti di drinkeria
     this.productService.getAllDrinkeriaProducts().subscribe(products => {
