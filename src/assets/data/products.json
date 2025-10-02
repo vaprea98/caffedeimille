@@ -53,6 +53,7 @@
       { "name": "Schweppes Limone", "price": "€2.50", "image": "assets/menu-photos/schweppes_lime.jpg" },
       { "name": "Schweppes Tonica", "price": "€2.50", "image": "assets/menu-photos/schweppes_tonica.jpg" },
       { "name": "Sprite", "price": "€2.50", "image": "assets/menu-photos/sprite.jpg" },
+      { "name": "Tassoni", "price": "€2.50", "image": "assets/menu-photos/tassoni.jpg" },
       { "name": "Succo di Frutta", "price": "€2.50", "image": "assets/menu-photos/succo_frutta.jpg", "description": "Pesca, Ananas, Ace, Pera" },
       { "name": "Succo di Frutta Martillo", "price": "€3.00", "image": "assets/menu-photos/succo_frutta.jpg"},
       { "name": "Estathè Limone", "price": "€3.00", "image": "assets/menu-photos/the_limone.jpg" },
