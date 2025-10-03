@@ -83,4 +83,34 @@ getBeerProducts():Observable<ProductItem[]> {
       map(data => [...data.drinkeria.drink, ...data.drinkeria.softDrink])
     );
   }
+
+  // Ottiene i prodotti pastry tradizionali
+  getTraditionalProducts(): Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.pasticceria.traditional)
+    );
+  }
+
+  // Ottiene i cornetti
+  getCornettiProducts(): Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.pasticceria.cornetti)
+    );
+  }
+
+  // Ottiene i prodotti dolci
+  getDolciProducts(): Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => data.pasticceria.dolci)
+    );
+  }
+  
+  // Ottiene tutti i prodotti di pasticceria (traditional + cornetti + dolci)
+  getAllPasticceriaProducts(): Observable<ProductItem[]> {
+    return this.http.get<any>(this.productsUrl).pipe(
+      map(data => [...data.pasticceria.traditional, ...data.pasticceria.cornetti, ...data.pasticceria.dolci])
+    );
+  }
+  
+
 }
