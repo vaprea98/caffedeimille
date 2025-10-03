@@ -1,6 +1,7 @@
 <app-header [showBackButton]="true" subtitle="Pasticceria"></app-header>
 
 <main class="container py-5">
+    <div #pageTop></div>
   <div class="card bg-light mb-4">
     <div class="card-body">
       <div class="d-flex align-items-center mb-4">
@@ -12,12 +13,159 @@
           <p class="section-description">Dolci della tradizione e torte artigianali preparate con ingredienti freschi</p>
         </div>
       </div>
-      
-      <ul class="list-unstyled">
-        <li *ngFor="let item of menuItems">
-          <app-product-card [product]="item"></app-product-card>
-        </li>
-      </ul>
+
+      <!-- Pulsanti di navigazione sottocategorie -->
+      <div class="mb-4">
+        <div class="row g-3">
+
+          <!-- Pulsante Cornetti -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('cornetti')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-pastry-cornetti me-3">
+                    <lucide-icon name="croissant" [size]="34"></lucide-icon>
+                  </div> 
+                  <div>
+                    <h3 class="card-title mb-1">Cornetti</h3>
+                    <p class="card-text">I nostri cornetti</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Pulsante Tradizionali -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('traditional')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-pastry-traditional me-3">
+                    <lucide-icon name="donut" [size]="34"></lucide-icon>
+                  </div> 
+                  <div>
+                    <h3 class="card-title mb-1">Pasticceria Tradizionale</h3>
+                    <p class="card-text">La nostra pasticceria tradizionale</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsante Dolci -->
+          <div class="col-md-6">
+            <div class="card category-card" (click)="showCategory('dolci')">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <div class="category-icon bg-pastry-dolci me-3">
+                    <lucide-icon name="cake-slice" [size]="38"></lucide-icon>
+                  </div> 
+                  <div>
+                    <h3 class="card-title mb-1">Dolci</h3>
+                    <p class="card-text">I nostri dolci</p>
+                  </div>
+                  <div class="ms-auto">
+                    <i class="bi bi-chevron-right" style="font-size: 1.5rem;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- Visualizzazione in base alla categoria selezionata -->
+        <div [ngSwitch]="currentCategory">
+        <!-- Vista menu principale (default) -->
+        <div *ngSwitchCase="'menu'">
+          <!-- I pulsanti di navigazione sono già mostrati sopra -->
+        </div>
+
+         <!-- Vista Cornetti -->
+        <div *ngSwitchCase="'cornetti'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-pastry me-3">
+              <lucide-icon name="croissant" [size]="34"></lucide-icon>
+            </div>
+            <h3 class="subsection-title">Cornetti</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of cornettiItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>
+
+<!-- Vista Tradizionale -->
+        <div *ngSwitchCase="'traditional'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-pastry-traditional me-3">
+              <lucide-icon name="donut" [size]="34"></lucide-icon>
+            </div>
+            <h3 class="subsection-title">Pasticceria Tradizionale</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of traditionalItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>   
+
+
+        <!-- Vista Dolci -->
+        <div *ngSwitchCase="'dolci'">
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <div class="category-icon bg-pastry-dolci me-3">
+              <lucide-icon name="cake-slice" [size]="34"></lucide-icon>
+            </div>
+            <h3 class="subsection-title">Dolci</h3>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i>Indietro
+            </button>
+          </div>
+          
+          <ul class="list-unstyled">
+            <li *ngFor="let item of dolciItems">
+              <app-product-card [product]="item"></app-product-card>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center mb-3" #sectionTop>
+            <button class="btn btn-sm btn-outline-secondary ms-auto" (click)="goBackToMenu()">
+              <i class="bi bi-arrow-left"></i> Indietro
+            </button>
+          </div>
+        </div>      
+       
+
+        
+        </div>
+        </div>    
+    </div>
     </div>
   </div>
 </main>
+

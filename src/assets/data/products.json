@@ -1,5 +1,5 @@
 {
-  "caffetteria": [
+    "caffetteria": [
     { "name": "Espresso", "price": "€1.20", "image": "assets/menu-photos/espresso.jpg" },
     { "name": "Macchiato", "price": "€1.20", "image": "assets/menu-photos/macchiatto.jpg" },
     { "name": "Caffè Dei Mille", "price": "€1.50", "image": "assets/menu-photos/logo.png", "description": "La nostra Specialità" },
@@ -11,25 +11,40 @@
     { "name": "Cappuccino", "price": "€2.00", "image": "assets/menu-photos/cappuccino.jpg" },
     { "name": "Cappuccino Freddo", "price": "€2.50", "image": "assets/menu-photos/cappuccino_freddo.jpg" },
     { "name": "Crema Caffè", "price": "€2.50", "image": "assets/menu-photos/crema_caffe.jpg" },
-    { "name": "Tea Twinings", "price": "€2.00", "image": "assets/menu-photos/tea.jpg" },
     { "name": "Camomilla", "price": "€2.00", "image": "assets/menu-photos/camomilla.jpg" },
-    { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.jpg" }
+    { "name": "Cioccolata Calda", "price": "€2.50", "image": "assets/menu-photos/cioccolata_calda.jpg" },
+    { "name": "Tea Twinings Nero", "price": "€2.00", "image": "assets/menu-photos/tea.jpg", "description": "Zenzero e Agrumi, Pesca, Vaniglia, Frutti Rossi, Cannella e Arancia" },
+    { "name": "Tea Twinings Classics", "price": "€2.00", "image": "assets/menu-photos/tea.jpg", "description": "Prince of Wales Tea (morbino e delicato), Agrumance Tea, Earl Grey Tea (all'aroma di bergamotto), Lemon Scented Tea, English Breakfast Tea (forte e deciso)" },
+    { "name": "Tea Twinings Sensation", "price": "€2.00", "image": "assets/menu-photos/tea.jpg", "description": "Zenzero e Limone, Finocchio Menta e Liquirizia, Frutti Rossi, Ciliegia e Cannella, Moringa Zenzero e Mango" }
   ],
-  "pasticceria": [
+  "pasticceria": {
+    "cornetti":[
     { "name": "Cornetto Mini", "price": "€1.00", "image": "assets/menu-photos/cornetto.jpg"},
-    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"},
     { "name": "Cornetto vuoto", "price": "€1.20", "image": "assets/menu-photos/cornetto.jpg" },
     { "name": "Cornetto farcito", "price": "€1.50", "image": "assets/menu-photos/cornetto_farcito.jpg", "description": "Nutella, Cioccolato Bianco, Albicocca, Crema" },
     { "name": "Cornetto al pistacchio", "price": "€2.00", "image": "assets/menu-photos/cornetto_pistacchio.jpg"},
     { "name": "Cornetto crema amarena", "price": "€2.00", "image": "assets/menu-photos/cornetto_creama_amarena.jpg"},
     { "name": "Cornetto ai frutti di bosco", "price": "€1.50", "image": "assets/menu-photos/cornetto_frutti.jpg"},
-    { "name": "Cornetto 5 cereali", "price": "€2.00", "image": "assets/menu-photos/cornetto_5cereali.jpg"},
-    { "name": "Sfogliatella", "price": "€1.50", "image": "assets/menu-photos/sfogliatella.jpg"},
+    { "name": "Cornetto 5 cereali", "price": "€2.00", "image": "assets/menu-photos/cornetto_5cereali.jpg"}
+    ],
+    "traditional": [
+    { "name": "Ciambella", "price": "€1.00", "image": "assets/menu-photos/ciambella.jpg"},
+    { "name": "Sfogliatella", "price": "€1.50", "image": "assets/menu-photos/sfogliatella.jpg" },
+    { "name": "Santa Rosa", "price": "€2.00", "image": "assets/menu-photos/santarosa.jpg"},
     { "name": "Monachina", "price": "€2.00", "image": "assets/menu-photos/monachina.jpg"},
     { "name": "Conchiglia", "price": "€2.00", "image": "assets/menu-photos/conchiglia.jpg"},
     { "name": "Pasticciotto", "price": "€2.00", "image": "assets/menu-photos/pasticciotto.jpg"},
     { "name": "Bombolone", "price": "€1.50", "image": "assets/menu-photos/bombolone.jpg"}
   ],
+  "dolci": [
+    { "name": "Cheesecake", "price": "€5.00", "image": "assets/menu-photos/cheesecake.jpg", "description": "Frutti di Bosco, Cioccolato, Caramello" },
+    { "name": "Tartufo", "price": "€3.50", "image": "assets/menu-photos/tartufo.jpg", "description": "Bianco, Nero" },
+    { "name": "Torta", "price": "€2.00", "image": "assets/menu-photos/torta.jpg", "description": "Caprea, Ciambellone" },
+    { "name": "Tronchetto Monoporzione", "price": "€4.00", "image": "assets/menu-photos/monoporzione.jpg", "description": "Amarena, Nocciola, Kinder Bueno" },
+    { "name": "Coppa Gelato", "price": "€3.50", "image": "assets/menu-photos/gelato.jpg", "description": "Amarena, Tiramisù, Cioccolato, Caffè" },
+    { "name": "Tronchetto 1,2Kg", "price": "€22.00", "image": "assets/menu-photos/tronchetto.jpg", "description": "Amarena, Nocciola, Kinder Bueno" }    
+  ]  
+},
   "drinkeria": {
     "drink": [
       { "name": "Aperol Spritz", "price": "€6.00", "image": "assets/menu-photos/spritz_aperol.jpg" },

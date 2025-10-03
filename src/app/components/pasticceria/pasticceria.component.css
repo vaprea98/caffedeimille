@@ -1,13 +1,20 @@
 .section-title {
   font-family: 'Lobster', cursive;
   font-size: 2rem;
-  color: #7a6900;
+  color: #760c00;
   margin-bottom: 0.5rem;
 }
 
 .section-description {
-  color: #655200;
+  color: #4b0800;
   font-size: 1.1rem;
+}
+
+.subsection-title {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  color: #762f00;
+  margin-bottom: 0;
 }
 
 .category-icon {
@@ -18,12 +25,23 @@
   justify-content: center;
   border-radius: 50%;
   color: white;
-  border-radius: 50%; 
   flex-shrink: 0;    
 }
 
 .bg-pastry {
-  background-color: #7a6900;
+  background-color: #956b00;
+}
+
+.bg-pastry-cornetti {
+  background-color: #743600;
+}
+
+.bg-pastry-traditional {
+  background-color: #dbad39;
+}
+
+.bg-pastry-dolci {
+  background-color: #cf7f38;
 }
 
 .menu-item {
@@ -32,7 +50,7 @@
   margin-bottom: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid rgba(139, 0, 139, 0.2);
+  border: 1px solid rgba(147, 112, 219, 0.2);
 }
 
 .menu-item:hover {
@@ -47,22 +65,47 @@
   border-radius: 0.5rem;
 }
 
-.menu-item-name {
-  color: #8B008B;
-  font-size: 1.2rem;
+.menu-item-name,
+.card-title {
+  color: #000000;
+  font-size: 1.5rem;
   font-weight: 500;
   display: block;
 }
 
 .menu-item-description {
-  color: #6c757d;
+  color: #6c4d2c;
   font-size: 0.9rem;
 }
 
 .menu-item-price {
-  color: #8B008B;
+  color: #000000;
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+/* Stili per i pulsanti di categoria */
+.category-card {
+  background: linear-gradient(to bottom right, #fbf1e3, #fff4e5);
+  border: 1px solid rgba(222, 184, 135, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
+}
+
+.category-icon {
+  transition: transform 0.3s ease;
 }
 
 /* Responsive */
