@@ -62,8 +62,8 @@
       { "name": "Red Bull", "price": "€3.00", "image": "assets/menu-photos/red_bull.jpg" }
     ],
     "wine": [
-      { "name": "Calice di vino", "price": "€4.00", "image": "assets/menu-photos/calice_vino.jpg", "description" :"Fiano, Aglianico, Greco di tufo, Falanghina, Taurasi"} ,
-      { "name": "Bottiglia di vino", "price": "€15.00", "image": "assets/menu-photos/vino.jpg", "description" :"Fiano, Aglianico, Greco di tufo, Falanghina, Taurasi"}
+      { "name": "Calice di vino", "price": "€5.00", "image": "assets/menu-photos/calice_vino.jpg", "description" :"Fiano, Aglianico, Falanghina"} ,
+      { "name": "Calico di vino", "price": "€7.00", "image": "assets/menu-photos/vino.jpg", "description" :"Greco di tufo, Taurasi"}
     ],
     "beer": [
       { "name": "Peroni", "price": "€3.00", "image": "assets/menu-photos/peroni.jpg" },
