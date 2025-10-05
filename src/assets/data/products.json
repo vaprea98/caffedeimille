@@ -106,7 +106,7 @@
       { "name": "Disaronno", "price": "€1.50", "image": "assets/menu-photos/disaronno.jpg", "description": "Cicchetto" },
       { "name": "Baileys", "price": "€2.00", "image": "assets/menu-photos/baileys.jpg", "description": "Cicchetto" },
       { "name": "Amaro Del Capo", "price": "€2.00", "image": "assets/menu-photos/amarodelcapo.jpg", "description": "Cicchetto" },
-      { "name": "Amaro Montenegro", "price": "€20.00", "image": "assets/menu-photos/montenegro.jpg", "description": "Cicchetto" },
+      { "name": "Amaro Montenegro", "price": "€2.00", "image": "assets/menu-photos/montenegro.jpg", "description": "Cicchetto" },
       { "name": "Jägermeister", "price": "€2.00", "image": "assets/menu-photos/jager.jpg", "description": "Cicchetto" },
       { "name": "Jefferson", "price": "€2.50", "image": "assets/menu-photos/jefferson.jpg", "description": "Cicchetto" }
 
